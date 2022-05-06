@@ -24,7 +24,7 @@ class App extends Component {
     return (
       <>
         <Container fluid="lg" className="px-4 py-5">
-          <Row xs={1} md={4} className="g-4" data-masonry='{"percentPosition": true }'>
+          <Row xs={1} sm={2} md={3} xl={4} className="g-4" data-masonry='{"percentPosition": true }'>
             {this.state.experts.map(expert => <ExpertPicks {...expert.fields} />)}
           </Row>
         </Container>
